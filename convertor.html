@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convertor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">
+    <style>
+       body
+       {
+        background-image:url("https://lplfinancial.lpl.com/content/dam/lpl-www/images/Article_Page/ARTICLE-calculator-image-680x500.jpg");
+        }
+        h1
+        {
+        color : lightgreen;
+        font-size : 100px;
+        font:Georgia
+        text-align : center;
+        }
+        ::-webkit-input-placeholder {
+            color:white;
+            text-align:center;
+            font:Georgia;
+        }
+        .button1
+        {
+        color: white;
+        width: 300px;
+        padding: 30px 20px;
+        height: 25px;
+        margin: 30px 20px;
+        border: 500px solid turqoise;
+        background-color: black;
+        }
+        .button2
+        {
+        color:white;
+        width:150px;
+        height:30px;
+        margin:50px 50px;
+        padding: 40px 20px;
+        background-color: purple;
+        cursor:pointer;
+        text-align:center;
+        border-radius: 15px; 
+        }
+        .button3
+        {
+        width: 200px;
+        padding: 30px;
+        height: 20px;
+        margin: 30px 30px;
+        border: 500px solid turqoise;
+        background-color: lightblue;
+        border-radius:15px;
+        }
+        .button2:hover
+        {
+            background-color:indigo;
+        }
+        .button2:active{
+          transform: translateY(4px);
+      }
+    </style>
+  </head>
+ <body>
+ <center>
+   <h1>Base Convertor</h1>
+    <input type="text" class="button1" name="number" id="num" placeholder="Enter number to be converted"> <br>
+         <input type="text"  class="button1" name="from" id="from" placeholder="From Base">
+             <input type="text" class="button1" name="to" id="to" placeholder="To base"></br>
+     <button type="button"  class="button2" name="convert" onclick='change()'>Convert</button> <br>
+   <input type="button" class="button3" name="answer" id="answer" value="Converted value"> <br>
+  <script>
+     function change()
+     {
+
+     var num = document.getElementById('num').value;
+     var from = document.getElementById('from').value;
+     var to = document.getElementById('to').value;
+     if(num=='' || from=='' || to=='')
+         {
+             window.alert("Please fill in all the fields");
+         return;
+     }
+     if((from && to) <2 || (from && to)>72)
+         alert('Base between 2 and 72');
+   
+     ans=parseInt(num + '', from).toString(to);
+     document.getElementById('answer').value=ans;
+     document.getElementById('num').value='';
+     document.getElementById('from').value='';
+     document.getElementById('to').value='';
+ }
+  </script>
+  </center>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
