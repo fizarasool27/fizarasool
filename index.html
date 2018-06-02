@@ -1,38 +1,89 @@
-<<!DOCTYPE html>
-<html>
-<head>
-  <title>Login Page</title>
-</head>
-<style>
-input[type=text],input[type=password]
-{
-   width: 100%;
-   padding: 15px 20 px;
-   height: 30px;
-   margin: 30px 0;
-   border: 2px black;
-   background-color: lightgrey;
-   
-}
-input[type=submit]
-{
-   width: 100%;
-   padding: 12px 20px;
-   height: 50px;
-   margin: 6px 0;
-   border: 2px black;
-   background-color: green;
-}
-</style>
-<body style="background-color:lightblue">
-  <h1 style="color:black;text-align:center">Login</h1>
-  <form>
-  <input type="text" name="username" placeholder=" Enter username">
-<br>
-  <input type="password" name="password" placeholder=" Enter password">
-<br>
-<input type="submit" value="Login">
-<span class="psw">Forgot <a href="#">password?</a></span>
-</form>
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ACM Alumni Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="container">
+        <div class="row flexb">
+          <div class="logo col-sm-2 col-xs-2">
+            <img src="img/ACM.png" class="img-responsive" alt="">
+          </div>
+          <div class="col-sm-offset-4 col-xs-offset-4 col-sm-2 col-xs-2 login">
+            <input type="text" name="login-user" id="login-user" class="login-1" placeholder="Username" value="">
+          </div>
+          <div class="col-sm-2 col-xs-2 login">
+            <input type="password" name="login-pwd" id="login-pwd" class="login-1" placeholder="Password" value="">
+          </div>
+          <div class="col-sm-1 col-xs-1 login">
+            <input type="button" name="login-btn" id="login-btn" class="login-3" value="Log In">
+          </div>
+        </div>
+      </div>
+    </nav><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-4">
+          <p class="sign-up-text">Sign Up</p>
+          <form class="sign-up-form-box" action="" method="">
+            <input type="text" name="signup-user" id="signup-user" class="signup-box" placeholder="Username" value=""><br>
+            <input type="password" name="signup-user" id="signup-pwd" class="signup-box" placeholder="Password" value=""><br>
+            <input type="email" name="signup-user" id="signup-email" class="signup-box" placeholder="Email" value=""><br>
+            <input type="text" name="signup-user" id="signup-phn" class="signup-box" placeholder="Phone No." value=""><br>
+            <input type="text" name="signup-user" id="signup-poy" class="signup-box" placeholder="Pass out Year" value=""><br>
+            <button type="button" name="button" id="btn" class="sign-up-btn center-block">
+              <i class="material-icons send-icon-bg">send</i>
+            </button>
+          </form>
+        </div>
+        <div class="col-sm-offset-1 col-xs-offset-1 col-sm-7 col-xs-7">
+          <img src="img/peepsX.png" class="img-responsive" style="width:100%;" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer starts here -->
+    <div class="footer">
+  
+      <div class="row">
+          <div class="col-sm-3 col-md-2"> 
+            <div class="footer-acm"> 
+              <img src="ACMAlumniPortal-Master/img/ACM.png" alt="ACM">
+            </div> 
+          </div> 
+          <div class="col-sm-6 col-md-2">
+            <div class="footer-acmw">
+               <img src="ACMAlumniPortal-Master/img/ACM-W.png" alt="ACM-W">
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-8">
+            <div class="footer-vit">
+                <img src="ACMAlumniPortal-Master/img/VIT.png" alt="VIT">
+            </div>
+          </div>
+    
+      </div> 
+    </div>
+
+
+  </body>
 </html>
+
+
+       
+            
+
+
+
+
